@@ -1,0 +1,9 @@
+purchase_amount = float(input("Enter the purchase amount: "))
+
+if purchase_amount >= 1000:
+    discount = 0.1  # 10% discount
+else:
+    discount = 0.05  # 5% discount
+
+discounted_amount = purchase_amount - (purchase_amount * discount)
+print(f"Discounted amount: {discounted_amount:.2f}")
